@@ -12,8 +12,12 @@ namespace HR
         {
             int n = 5;
             string[] arr_temp = Console.ReadLine().Split(' ');
-            int[] arr = { 1, 4, 3, 5, 6, 2 };
-            InsertionSort2(n, arr);
+            int[] arr = { 1, 0, 5, 7, 4, 12 };
+            InsertionSort1(n, arr);
+            //int V = 4;
+            //int result = IntroTutorial(V, arr);
+            //Console.WriteLine(result);
+            Console.ReadLine();
             //insertionSort1(n, arr);
         }
         public static void InsertionSort1(int n, int[] arr)
@@ -58,6 +62,22 @@ namespace HR
             Console.WriteLine(string.Join(" ", arr));
             }
             Console.ReadLine();
+        }
+
+        private static int IntroTutorial(int V, int[] arr)
+        {
+            // Complete this function
+            int result = 0;
+            double mid = arr.Length / 2;
+            int center =(int) Math.Round(mid);
+            for(int i =0; i < arr.Length; i += 1)
+            {
+                if (arr[i] == V)
+                {
+                    return i;
+                }
+            }
+            return result;
         }
     }
 }
