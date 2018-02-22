@@ -1,0 +1,7 @@
+E:\hackerrank_current\HR CSharp\HR\bin\Debug\HR.exe.config
+E:\hackerrank_current\HR CSharp\HR\bin\Debug\HR.exe
+E:\hackerrank_current\HR CSharp\HR\bin\Debug\HR.pdb
+E:\hackerrank_current\HR CSharp\HR\obj\Debug\HR.csproj.CoreCompileInputs.cache
+E:\hackerrank_current\HR CSharp\HR\obj\Debug\HR.exe
+E:\hackerrank_current\HR CSharp\HR\obj\Debug\HR.pdb
+E:\hackerrank_current\HR CSharp\HR\obj\Debug\HR.csprojResolveAssemblyReference.cache
