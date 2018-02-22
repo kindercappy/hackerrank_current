@@ -13,12 +13,8 @@ namespace HR
             int n = 5;
             string[] arr_temp = Console.ReadLine().Split(' ');
             int[] arr = { 1, 0, 5, 7, 4, 12 };
-            InsertionSort1(n, arr);
-            //int V = 4;
-            //int result = IntroTutorial(V, arr);
-            //Console.WriteLine(result);
+            CorrectnessAndTheLoopInvariant(arr);
             Console.ReadLine();
-            //insertionSort1(n, arr);
         }
         public static void InsertionSort1(int n, int[] arr)
         {
@@ -78,6 +74,23 @@ namespace HR
                 }
             }
             return result;
+        }
+
+        private static void CorrectnessAndTheLoopInvariant(int[] A)
+        {
+            var j = 0;
+            for (var i = 1; i < A.Length; i++)
+            {
+                var value = A[i];
+                j = i - 1;
+                while (j >= 0 && value < A[j])
+                {
+                    A[j + 1] = A[j];
+                    j = j - 1;
+                }
+                A[j + 1] = value;
+            }
+            Console.WriteLine(string.Join(" ", A));
         }
     }
 }
